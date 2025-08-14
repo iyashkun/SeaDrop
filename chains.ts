@@ -6,12 +6,7 @@ import {
   optimism, 
   base,
   avalanche,
-  bsc,
-  klaytn,
-  polygonZkEvm,
-  arbitrumNova,
-  sepolia,
-  polygonMumbai
+  abstract,
 } from 'viem/chains'
 
 export const SUPPORTED_CHAINS: Chain[] = [
@@ -21,12 +16,7 @@ export const SUPPORTED_CHAINS: Chain[] = [
   optimism,
   base,
   avalanche,
-  bsc,
-  klaytn,
-  polygonZkEvm,
-  arbitrumNova,
-  sepolia,
-  polygonMumbai
+  abstract
 ]
 
 export const CHAIN_CONFIGS = {
@@ -72,19 +62,12 @@ export const CHAIN_CONFIGS = {
     openseaAPI: 'https://api.opensea.io/api/v2',
     explorerUrl: 'https://snowscan.xyz'
   },
-  [bsc.id]: {
-    name: 'BNB Chain',
-    currency: 'BNB',
+  [abstract.id]: {
+    name: 'Abstract',
+    currency: 'ETH',
     seadropFactories: ['0x00005EA00Ac477B1030CE78506496e8C2dE24bf5'],
     openseaAPI: 'https://api.opensea.io/api/v2',
-    explorerUrl: 'https://bscscan.com'
-  },
-  [klaytn.id]: {
-    name: 'Klaytn',
-    currency: 'KLAY',
-    seadropFactories: ['0x00005EA00Ac477B1030CE78506496e8C2dE24bf5'],
-    openseaAPI: 'https://api.opensea.io/api/v2',
-    explorerUrl: 'https://klaytnscope.com'
+    explorerUrl: 'https://abscan.org'
   }
 }
 
