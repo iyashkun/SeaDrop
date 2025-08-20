@@ -1,0 +1,11 @@
+[
+  {
+    "address": "0xWalletAddress1",
+    "privateKey": "PrivateKey1"
+  },
+  {
+    "address": "0xWalletAddress2",
+    "privateKey": "PrivateKey2"
+  }
+  // ... 998 more wallets
+]
